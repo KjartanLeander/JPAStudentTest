@@ -22,7 +22,7 @@ public class StudentRestController {
 
     @GetMapping("/")
     public String detteErRoden() {
-        return "Du er i roden af JPAStudent";
+        return "Du er i roden af JPAStudentTest";
     }
 
     @GetMapping("/addstudent")
@@ -36,7 +36,6 @@ public class StudentRestController {
         lst = studentRepository.findAll();
         return lst;
     }
-
 
     @GetMapping("/students")
     public List<Student> listStudents() {
